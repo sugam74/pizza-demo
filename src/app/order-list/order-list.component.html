@@ -1,0 +1,36 @@
+<!-- <mat-list>
+  <mat-list-item *ngFor="let message of orderList" class="">
+    <img matListAvatar src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu">
+    <h3 matLine> Name : {{message.customerName}} </h3>
+    <p matLine>
+      <span> Total items : {{message.totalItems}} </span>
+      <br>
+      <span class="demo-2"> Total Amount : {{message.totalAmount}} </span>
+      <span>
+        <button mat-raised-button color="primary">{{message.orderStatus}}</button>
+      </span>
+    </p>
+  </mat-list-item>
+</mat-list> -->
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="card effect2" *ngFor="let message of orderList" >
+				<h5 class="card-header" (click)="showOrderDetails(message.orderId)">
+					Order ID : <span class="text-success order-id-highlight">{{message.orderId}}</span> by <span class="text-secondary">{{message.customerName}}</span>
+				</h5>
+				<div class="card-body">
+					<p class="card-text">
+            <span>Items : <b>{{message.totalItems}}</b></span><br>
+            <span class="amount">Amount : <span class="text-danger"><b>{{message.totalAmount}}</b></span></span>
+            <span class="status-btn"><button type="button" class="btn btn-primary" [ngClass]="message.orderStatus == 'Ready to serve' ? 'btn-danger': 'btn-primary'" (click)="changeStatus(message.orderId, message.orderStatus)">{{message.orderStatus}}</button></span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-8">
+        <app-order-view [orderId]="orderId"></app-order-view>
+      </div>
+	</div>
+</div>

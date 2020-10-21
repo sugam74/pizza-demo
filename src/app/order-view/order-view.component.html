@@ -1,0 +1,50 @@
+<div  *ngIf="orderId === undefined? false : true">
+<div class="row">
+
+    <div class="col-md-6">
+      <h3 class="text-dark">
+        {{customerName}}
+      </h3>
+    </div>
+    <div class="col-md-6">
+       
+      <address class="text-success">
+        <span>Customer Address: </span>
+        {{customerAddress}}
+         <!-- <strong>Twitter, Inc.</strong><br /> 795 Folsom Ave, Suite 600<br /> San Francisco, CA 94107<br /> <abbr title="Phone">P:</abbr> (123) 456-7890 -->
+      </address>
+    </div>
+  </div>
+  <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Sl. No</th>
+          <th scope="col">Item</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let order of orderDetails; let i = index">
+        <tr>
+          <th scope="row">{{i+1}}</th>
+          <td class="text-secondary">{{order.item}}</td>
+          <td class="text-danger">{{order.price}}</td>
+        </tr>
+        <!-- <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr> -->
+      </tbody>
+    </table>
+    <hr>
+  </div>
+  <div *ngIf="orderId !== undefined? false : true" class="loader-pizza">
+      <img src="../../assets/images/326.gif" />
+  </div>

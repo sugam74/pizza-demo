@@ -1,0 +1,28 @@
+.card {
+    margin-top:10px;
+    cursor: pointer;
+}
+.card:hover{
+    
+}
+.status-btn {
+    float: right;
+}
+.order-id-highlight {
+    font-weight: 500;
+}
+.order-id-highlight:hover {
+text-decoration: underline;
+color: #eb4034;
+}
+
+.effect2
+{
+  position: relative;
+}
+.effect2:hover
+{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
+}

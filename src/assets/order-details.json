@@ -1,0 +1,110 @@
+[
+    {
+        "orderId":"OD00012",
+        "customerName": "Sugam Pradhan",
+        "totalItems": 6,
+        "totalAmount": 2150,
+        "orderStatus": "Order Received",
+        "deliveryAddress": "Site no : 516,1st Cross, Kaveri Layout, Marathalli, Bangalore P: (+91) 9482-814-548",
+        "orders": [
+            {
+                "item": "Marghertia",
+                "price": 600
+            },
+            {
+                "item": "Fresh Veggie",
+                "price": 450
+            },
+            {
+                "item": "FarmHouse Pizza",
+                "price": 200
+            },
+            {
+                "item": "Peppy Paneer",
+                "price": 300
+            },
+            {
+                "item": "Veggie Paradise",
+                "price": 200
+            },
+            {
+                "item": "Deluxe Veggie",
+                "price": 400
+            }
+        ]
+    },
+    {
+        "orderId":"OD00013",
+        "customerName": "Sushanta Nayak",
+        "totalItems": 5,
+        "totalAmount": 2000,
+        "orderStatus": "Order Received",
+        "deliveryAddress": "Site no : 516,1st Cross, Kaveri Layout, Marathalli, Bangalore P: (+91) 9482-814-548",
+        "orders": [
+            {
+                "item": "Large Veg Pizza",
+                "price": 600
+            },
+            {
+                "item": "Cheese n Corn Pizza",
+                "price": 500
+            },
+            {
+                "item": "Pepper Barbecue & Onion",
+                "price": 300
+            },
+            {
+                "item": "Veggie Paradise",
+                "price": 200
+            },
+            {
+                "item": "Deluxe Veggie",
+                "price": 400
+            }
+        ]
+    },
+    {
+        "orderId":"OD00014",
+        "customerName": "Deepak Pande",
+        "totalItems": 3,
+        "totalAmount": 1700,
+        "orderStatus": "Order Received",
+        "deliveryAddress": "Site no : 516,1st Cross, Kaveri Layout, Marathalli, Bangalore P: (+91) 9482-814-548",
+        "orders": [
+            {
+                "item": "Chicken Golden Delight",
+                "price": 600
+            },
+            {
+                "item": "Chicken Fiesta",
+                "price": 400
+            },
+            {
+                "item": "Non Veg Supreme",
+                "price": 700
+            }
+        ]
+    },
+    {
+        "orderId":"OD00015",
+        "customerName": "Sumit Kapoor",
+        "totalItems": 3,
+        "totalAmount": 1200,
+        "orderStatus": "Order Received",
+        "deliveryAddress": "Site no : 516,1st Cross, Kaveri Layout, Marathalli, Bangalore P: (+91) 9482-814-548",
+        "orders": [
+            {
+                "item": "Chicken Pepperoni",
+                "price": 600
+            },
+            {
+                "item": "Chicken Dominator",
+                "price": 300
+            },
+            {
+                "item": "Chicken Sausage",
+                "price": 300
+            }
+        ]
+    }
+]
